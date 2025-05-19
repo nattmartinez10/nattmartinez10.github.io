@@ -1,0 +1,82 @@
+@keyframes oceanBreeze {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .profileImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.3); /* ocean glow */
+    border: 3px solid #5ec6fa;
+  }
+  
+  .textBox h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .textBox p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 600px;
+  }
+  
+  .aboutSection {
+    position: relative;
+    background: linear-gradient(to bottom, #04152d, #0b2447, #19376d);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    overflow: hidden;
+  }
+  
+  .aboutSection #tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+
+  .aboutSection::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: url('https://www.svgrepo.com/show/353326/wave.svg') repeat-x;
+    background-size: cover;
+    opacity: 0.2;
+  }
+  
+  
