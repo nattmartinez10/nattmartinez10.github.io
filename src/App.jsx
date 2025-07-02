@@ -1,14 +1,18 @@
 import styles from './App.module.css';
 import { NavBar } from './components/NavBar';
+import { Home } from './components/Home';
 import { About } from './components/About';
-import ParticleBackground from './components/ParticleBackground';
+
+
 
 function App() {
   return (
     <div className={styles.App}>
-      <ParticleBackground />
       <NavBar />
+      <Home />
+      <div className="section-divider"></div>
       <About />
+
     </div>
   );
 }
