@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(0.5deg); }
+  50% { transform: translateY(-6px) rotate(0deg); }
+  75% { transform: translateY(-3px) rotate(-0.5deg); }
+}
+
+.skillsSection {
+  background-color: #f8f9fa;
+  padding: 20px 20px; /* reduced top padding */
+  font-family: 'Reem Kufi Ink', sans-serif;
+  color: #342E37;
+}
+
+
+.section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto; /* match About's section spacing */
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 8px;
+  line-height: 56px;
+}
+
+.line {
+  width: 160px;
+  border-bottom: 3px solid #3C91E6;
+  margin-bottom: 30px;
+}
+
+.categoryTitle {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 35px;
+  min-height: 35px;
+  transition: color 0.4s ease;
+}
+
+.skillsSlide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  min-height: 140px;
+}
+
+.skillBubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  animation: float 4s ease-in-out infinite;
+  min-width: 85px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skillBubbleHover {
+  transform: translateY(-10px) scale(1.08);
+  color: #fff;
+}
+
+.skillIcon {
+  font-size: 28px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.skillName {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skillsSection {
+    padding: 30px 15px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .categoryTitle {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .skillsSlide {
+    gap: 12px;
+    padding: 10px;
+    min-height: 120px;
+  }
+
+  .skillBubble {
+    padding: 15px 12px;
+    min-width: 75px;
+  }
+
+  .skillIcon {
+    font-size: 24px;
+  }
+
+  .skillName {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsSlide {
+    gap: 10px;
+  }
+
+  .skillBubble {
+    padding: 12px 10px;
+    min-width: 70px;
+  }
+}
+
+.twoColumn {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.categoryBlock {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+

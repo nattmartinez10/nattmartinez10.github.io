@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
 
 .navBar {
+  position: absolute; /* changed from absolute */
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* stays above everything */
   display: flex;
   flex-direction: row;
   gap: 40px;
   justify-content: center;
   align-items: center;
-
-  position: absolute;
-  top: 47px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  height: 24px;
 }
 
 .navBar a {
@@ -26,4 +24,16 @@
 .navBar a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+  .navBar {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .navBar a {
+    font-size: 14px;
+  }
+}
+
 

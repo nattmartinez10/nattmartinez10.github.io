@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
 
 .aboutSection {
-  background-color: #f9fcfc;
+  background-color: #f8f9fa;
   padding: 80px 20px;
   font-family: 'Reem Kufi Ink', sans-serif;
   color: #342E37;
@@ -10,7 +10,11 @@
 .section {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto 80px auto; /* ✅ center the section */
+  margin: 0 auto 80px auto;
+}
+
+.experienceSection {
+  margin-bottom: 0px;
 }
 
 .title {
@@ -28,15 +32,16 @@
 .educationGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
-  justify-content: flex-start;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .eduItem {
+  flex: 1 1 400px;
+  min-width: 260px;
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  max-width: 420px;
 }
 
 .logo {
@@ -66,5 +71,48 @@
 
 .expItem {
   margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    margin: 0 auto 60px auto;
+  }
+
+  .educationGrid {
+    gap: 20px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .degree {
+    font-size: 20px;
+  }
+
+  .school {
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .degree {
+    font-size: 18px;
+  }
+
+  .school {
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
 }
 

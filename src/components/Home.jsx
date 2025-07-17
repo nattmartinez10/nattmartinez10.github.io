@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
-import avatar from '../assets/yo.png'; 
+import avatar from '../assets/yo.png';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 export const Home = () => {
   return (
-    <section className={styles.homeSection} id="home">
+    <section className={styles.homeSection} id="home" data-aos="zoom-in">
       <div className={styles.card}>
         <img src={avatar} alt="Natalia" className={styles.avatar} />
         <div className={styles.text}>
@@ -30,3 +30,4 @@ export const Home = () => {
     </section>
   );
 };
+

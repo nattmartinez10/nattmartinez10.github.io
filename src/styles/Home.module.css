@@ -4,11 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px; /* space below header */
+  padding-top: 100px;
   padding-bottom: 60px;
   font-family: 'Reem Kufi Ink', sans-serif;
   min-height: 100vh;
-  background-color: #f8f9fa; /* optional: light background */
+  background-color: #f8f9fa;
 }
 
 .card {
@@ -38,14 +38,13 @@
   flex: 1;
   min-width: 280px;
   align-self: flex-start;
-  margin-top: 50px; /* 👈 actually moves it down */
+  margin-top: 50px;
 }
 
 .hi {
   font-size: 48px;
   color: #342E37;
   line-height: 72px;
-
 }
 
 .name {
@@ -94,4 +93,39 @@
 
 .icons a:hover {
   transform: scale(1.2);
+}
+
+/* ✅ Responsive only */
+@media (max-width: 768px) {
+  .hi,
+  .name {
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 16px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 260px;
+  }
+
+  .text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
 }

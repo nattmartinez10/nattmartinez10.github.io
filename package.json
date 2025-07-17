@@ -15,12 +15,16 @@
   "dependencies": {
     "@fontsource/outfit": "^5.1.1",
     "@fontsource/roboto": "^5.1.1",
+    "aos": "^2.3.4",
     "boxicons": "^2.1.4",
+    "framer-motion": "^12.23.6",
     "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
+    "react-slick": "^0.30.3",
     "react-tsparticles": "^2.12.2",
+    "slick-carousel": "^1.8.1",
     "tsparticles": "^3.8.1"
   },
   "devDependencies": {
