@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const skillsCategories = [
   {
     title: "Platforms & OS",
-    color: "#6C5CE7",
+    color: "#9F8C76",
     skills: [
       { name: 'Windows', icon: '🪟' },
       { name: 'Linux', icon: '🐧' },
@@ -18,7 +18,7 @@ const skillsCategories = [
   },
   {
     title: "Technologies",
-    color: "#00B894",
+    color: "#9F8C76",
     skills: [
       { name: 'React', icon: '⚛️' },
       { name: 'Node.js', icon: '🟢' },
@@ -33,7 +33,7 @@ const skillsCategories = [
   },
   {
     title: "Languages",
-    color: "#FF6B6B",
+    color: "#9F8C76",
     skills: [
       { name: 'JavaScript', icon: '💛' },
       { name: 'Python', icon: '🐍' },

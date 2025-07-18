@@ -4,31 +4,38 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
+import portfolioImage from '../assets/portafoliowebsite.png';
+import sequenceImage from '../assets/SequenceGame.png';
+import crudImage from '../assets/cruddocker.webp';
+import geminiImage from '../assets/gemini.png';
+
+
 
 const projects = [
   {
     title: "Receipt OCR App",
-    image: "https://via.placeholder.com/400x250?text=Receipt+OCR",
-    description: "Extracts structured data from receipt images using Python, React, and ML.",
-    github: "https://github.com/nattmartinez10/receipt-ocr"
+    image: geminiImage,
+    description: "Extracts structured data from receipt images using Python, React, and MA full-stack expense reporting platform built with React.js, Node.js, MongoDB, and Python. Employees upload receipts for automatic data extraction using the Google Gemini API, and managers can review, approve, or deny expenses through an intuitive dashboard.",
+    github: "https://github.com/nattmartinez10/EERIS-8"
   },
   {
-    title: "CRUD Docker App",
-    image: "https://via.placeholder.com/400x250?text=CRUD+Docker",
-    description: "A containerized CRUD app using Node.js and MongoDB.",
-    github: "https://github.com/nattmartinez10/CRUD-docker"
+    title: "Sequence Javascript Game",
+    image: sequenceImage,
+    description: "A browser-based implementation of the Sequence board game using JavaScript, featuring interactive gameplay, card logic, and token placement. Built from scratch to replicate real game rules, including wild cards, removals, and turn-based play.",
+    github: "https://github.com/nattmartinez10/sequence_javascript_game"
   },
-  {
-    title: "Personal Dashboard",
-    image: "https://via.placeholder.com/400x250?text=Dashboard",
-    description: "A dashboard for personal productivity using React and Firebase.",
-    github: "https://github.com/nattmartinez10/personal-dashboard"
-  },
+
   {
     title: "Portfolio Website",
-    image: "https://via.placeholder.com/400x250?text=Portfolio",
-    description: "My responsive portfolio built with React.",
+    image: portfolioImage,
+    description: "A personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and experience. Designed for clean navigation and responsiveness to highlight my work and background as a software developer.",
     github: "https://github.com/nattmartinez10/nattmartinez10.github.io"
+  },
+  {
+    title: "CRUD Docker Application",
+    image: crudImage,
+    description: "A Dockerized desktop application for managing personal records with full CRUD functionality. Includes field validation (e.g., name length, numeric and email format checks), dropdowns for gender and document type, date pickers, and image size validation. Packaged with Docker for consistent deployment and environment setup.",
+    github: "https://github.com/nattmartinez10/CRUD-docker"
   }
 ];
 
